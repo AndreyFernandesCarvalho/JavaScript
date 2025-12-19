@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro documento utilizando Java Script</title>
+    <style>
+        main {
+            max-width: 30rem;
+            min-width: 10rem;
+            margin: auto;
+            padding: 1.2rem;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+        }
+        
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(222, 235, 246);
+        }
+
+        body h1 {
+            text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.375);
+            margin-bottom: 5px;
+        }
+
+        body p.title {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        body p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        strong {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Hello, World!</h1>
+        <p class="title">Primeiro documento utilizando <strong>Java Script</strong></p>
+        <p><strong>Lorem</strong> ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam dolore fugiat nihil a itaque esse libero enim, necessitatibus tempora fuga ipsam, debitis quia quibusdam magnam sunt odit. Reprehenderit, labore. <strong>Lorem</strong> ipsum dolor sit amet consectetur, adipisicing elit. Ex eligendi mollitia nulla aliquam doloribus nisi voluptatem quaerat dolores nostrum animi, ad odit quas consequatur soluta deserunt repudiandae assumenda molestias eum.</p>
+    </main>
+
+    <script>
+        var nome = window.prompt("Qual é o seu nome?");
+        window.alert("É um prazer te conhecer " + nome + "!");
+    </script>
+</body>
+</html>

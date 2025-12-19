@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais em Java Script</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+
+    <div id="velocidade">Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h.</div>
+
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="resultado">
+        
+    </div>
+    <script>
+        
+        function calcular(){
+          let txtvel = document.querySelector("#txtvel");  
+          let resultado = document.querySelector("#resultado");
+          let velocidade = Number(txtvel.value); 
+
+            resultado.innerHTML = `<p>Sua velocidade é de <strong>${velocidade} Km/h</strong>.</p>`;
+            if (velocidade > 60) {
+                resultado.innerHTML += `Você está <strong>MULTADO</strong> por <strong>excesso de velocidade</strong>`
+            }
+            resultado.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`;
+        }
+
+    </script>
+</body>
+</html>

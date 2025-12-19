@@ -1,0 +1,110 @@
+
+body {
+    background-color: cornflowerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #00000055;
+}
+
+main {
+    background-color: white;
+    box-shadow: 2px 2px 5px #00000055;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    width: 30rem;
+}
+
+#dados > input{
+    background-color: lightgray;
+
+    display: block;
+    border: none;
+
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+
+}
+
+#dados > input:focus {
+    outline: none;
+}
+
+#btn {
+    background-color: #ffd166;
+    color: #fb8500;
+
+    font-weight: bold;
+
+    width: 126px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#btn:active {
+    scale: calc(0.90);
+}
+
+#btn:hover {
+    background-color: #c5a250;
+    color: #b36001;
+}
+
+#btn-apagar {
+    background-color: tomato;
+    color: #af3520;
+
+    font-weight: bold;
+
+    width: 126px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#btn-apagar:active {
+    scale: calc(0.90);
+}
+
+#btn-apagar:hover {
+    background-color: #c84c37;
+    color: #782416;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+}

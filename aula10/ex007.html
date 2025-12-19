@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex007 eventos DOM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        
+        #txtn1, #txtn2{
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+            background-color: lightgrey;
+        }
+
+        input {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        #btn {
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+            background-color: lightskyblue;
+            color: rgb(54, 119, 159);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.376);
+            cursor: pointer;
+            animation-duration: 0.5s;
+        }
+
+        #btn:hover {
+            background-color: rgb(116, 194, 243);
+        }
+
+        #btn:active {
+            background-color: rgb(54, 119, 159);
+            color: lightskyblue;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+
+        <input type="button" value="somar" id="btn" onclick="somar()">
+        <input type="button" value="resetar" id="btn" onclick="reset()">
+    
+        <div id="resultado">Resultado...</div>
+
+    <script>
+        function somar() {
+            let tn1 = document.querySelector("#txtn1");
+            let tn2 = document.querySelector("#txtn2");
+            let resultado = document.querySelector("#resultado");
+
+            let num1 = Number.parseInt(tn1.value);
+            let num2 = Number.parseInt(tn2.value);
+
+            let soma = num1 + num2;
+            resultado.innerText = `A soma entre ${num1} e ${num2} é igual a ${soma}`;
+        }
+
+        function reset() {
+            document.querySelector("#txtn1").value = "";
+            document.querySelector("#txtn2").value = "";
+            document.querySelector("#resultado").innerText = "Resultado...";
+        }
+    </script>
+    
+</body>
+</html>
