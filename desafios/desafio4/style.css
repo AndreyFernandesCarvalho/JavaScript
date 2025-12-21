@@ -1,0 +1,93 @@
+:root {
+    --cor1: #f2f4ff;
+    --cor2: #8fc4ef;
+    --cor3: #6096BA;
+    --cor4: #274C77;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98vh;
+
+}
+
+h1 {
+    color: var(--cor1);
+    text-shadow: 2px 2px 5px #00000038;
+}
+
+main {
+    background-color: var(--cor1);
+
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #00000038;
+}
+
+main #num {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgray;
+}
+
+main #num:focus {
+    outline: 0;
+}
+
+main #btn-adicionar, #btn-finalizar {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+
+    background-color: var(--cor4);
+    color: var(--cor2);
+    
+    font-weight: bold;
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+}
+
+main #btn-adicionar:hover {
+    background-color: #274c77de;
+    color: #8fc4efe3;
+    scale: calc(1.05);
+}
+
+main #btn-adicionar:active {
+    scale: calc(0.90);
+}
+
+main #btn-finalizar:hover {
+    background-color: #274c77de;
+    color: #8fc4efe3;
+    scale: calc(1.05);
+}
+
+main #btn-finalizar:active {
+    scale: calc(0.90);
+}
+
+main #select {
+    width: 10rem;
+    margin-bottom: 10px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
+}
+
+#respostas {
+    margin-top: 10px;
+}
+
+footer {
+    color: var(--cor1);
+    font-weight: bold;
+    font-style: italic;
+}
