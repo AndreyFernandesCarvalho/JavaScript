@@ -1,0 +1,66 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98vh;
+
+    background: url(imagens/wallpaper004.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: rgb(49, 49, 49);
+    text-shadow: 2px 2px 5px #00000039;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: cornflowerblue;
+    padding: 10px;
+    height: 20rem;
+    width: 35rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #00000055;
+}
+
+main #num {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.24);
+
+    padding: 20px 70px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+    font-weight: bold;
+    font-size: 8rem;
+
+    margin-bottom: 20px;
+}
+
+main #buttons input{
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: 2px solid white;
+
+    background-color: rgba(255, 255, 255, 0.362);
+    color: white;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    cursor: pointer;
+}
+
+main #buttons input:hover {
+    scale: calc(1.05);
+}
