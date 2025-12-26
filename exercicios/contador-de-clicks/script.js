@@ -1,5 +1,4 @@
 let num = document.querySelector("#num");
-let btnAcrescentar = document.querySelector("#btn-acrescentar");
 let contador = 0;
 
 function acrescentar() {
