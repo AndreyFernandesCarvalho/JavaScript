@@ -1,0 +1,88 @@
+body {
+    background-image:linear-gradient(to bottom , cornflowerblue, white);
+    background-attachment: fixed;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98vh;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+}
+
+main {
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #0000002f;
+
+    width: 90%;
+    max-width: 40rem;
+    min-height: 20rem;
+    
+}
+
+main #valor {
+    background-color: rgb(212, 234, 253);
+
+    padding: 10px;
+    border-radius: 10px;
+
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+main #buttons input { 
+    padding: 15px;
+    width: 150px;
+
+    border-radius: 5px;
+
+    border: 2px solid rgb(120, 153, 182);
+    background-color: aliceblue;
+    color: rgb(120, 153, 182);
+    
+    font-weight: bolder;
+    font-size: 1.1rem;
+
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+main #buttons input:hover {
+    scale: calc(1.05);
+    background-color: rgb(120, 153, 182);
+    color: aliceblue;
+}
+
+main #margem input {
+    margin-top: 20px;
+    padding: 5px; 
+
+    border: 2px solid rgb(120, 153, 182);
+    border-radius: 5px;
+    width: 138px;
+
+    font-weight: bold;
+}
+
+main #margem input::placeholder {
+    font-weight: bold;
+    color: rgb(120, 153, 182);
+}
+
+main #margem input:focus {
+    outline: none;
+}
