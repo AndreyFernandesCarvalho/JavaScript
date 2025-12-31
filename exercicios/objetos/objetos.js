@@ -12,7 +12,6 @@ const pessoa1 = {
         this.idade++;
     }
 };
-
 pessoa1.fala();
 pessoa1.aumentarIdade();
 pessoa1.fala();
