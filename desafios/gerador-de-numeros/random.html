@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="random.css">
+</head>
+<body> 
+    <header>
+        <h1>Gerador de números aleatórios</h1>
+    </header>
+
+    <main>
+        <section id="valor">
+            0
+        </section>
+        <section id="buttons">
+            <input type="button" value="gerar" onclick="gerar()">
+            <input type="button" value="reset" onclick="reset()">
+        </section>
+        <section id="margem">
+            <input type="number" name="max" id="max" placeholder="valor max">
+            <input type="number" name="min" id="min" placeholder="valor min">
+        </section>
+    </main>
+    <script src="random.js"></script>
+</body>
+</html>
