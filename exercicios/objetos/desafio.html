@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desafio.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="nome">
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome">
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" placeholder="idade">
+
+        <label for="altura">Altura:</label>
+        <input type="number" name="altura" id="altura" placeholder="altura">
+
+        <input type="button" value="Enviar" id="btn_enviar" onclick="enviar()">
+        <section id="respostas">
+
+        </section>
+    </main>
+    <script src="desafio.js"></script>
+</body>
+</html>
